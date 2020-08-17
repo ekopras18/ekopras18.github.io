@@ -121,6 +121,12 @@
   margin-top: 80px;
 }
 
+.skills .container p {
+  font-size: 17px;
+  font-weight: 200;
+  margin: 8px 0;
+}
+
 .skills h3 {
   text-align: center;
   padding: 20px;
