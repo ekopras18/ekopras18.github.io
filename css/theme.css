@@ -140,14 +140,14 @@
   margin-top: 5px;
 }
 .testimonial figure h5 {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   font-style: normal;
   color: #1C2C5D;
 }
 
 .testimonial figure p {
-  font-size: 12px;
+  font-size: 10px;
   color: #ACACAC;
   margin-top: -7px !important;
 }
@@ -210,6 +210,10 @@
 
   .testimonial h5 {
     font-size: 25px;
+  }
+
+  .testimonial figure h5 {
+    font-size: 15px;
   }
 }
 
