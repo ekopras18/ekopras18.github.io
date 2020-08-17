@@ -9,10 +9,10 @@
 }
 
 .container h1.frame-5 span {
-    -webkit-animation: blurFadeIn 1s ease-in 1s backwards;
-    -moz-animation: blurFadeIn 1s ease-in 1s backwards;
-    -ms-animation: blurFadeIn 1s ease-in 1s backwards;
-    animation: blurFadeIn 1s ease-in 1s backwards;
+    -webkit-animation: blurFadeIn 1s ease-in 0s backwards;
+    -moz-animation: blurFadeIn 1s ease-in 0s backwards;
+    -ms-animation: blurFadeIn 1s ease-in 0s backwards;
+    animation: blurFadeIn 1s ease-in 0s backwards;
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
