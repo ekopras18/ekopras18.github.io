@@ -370,12 +370,27 @@
 }
 
 .contacs label {
-  font-weight: 200;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #3D3D3D;
+}
+
+.contacs .form-check, label.terms {
+  text-transform: none;
+
 }
 .contacs input {
   font-weight: 200;
   font-style: italic;
+  border-radius: 5px;
 }
+
+.contacs input.is-invalid:focus {
+  font-weight: 200;
+  border-radius: 5px;
+}
+
 .contacs textarea {
   font-weight: 200;
   font-style: italic;
@@ -385,7 +400,9 @@
   font-weight: 200;
 }
 .contacs dt {
+  text-transform: uppercase;
   font-weight: bold;
+  font-size: 12px;
   color: #3D3D3D;
 }
 

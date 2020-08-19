@@ -49,3 +49,50 @@ $('.jumbotron .text-paralax').each(function(i) {
             scrollTop: $("#home").offset().top
           }, 800);
     });
+
+
+// VALIDASI FORM
+
+$(document).ready(function () {
+  $('#validasiform').validate({
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+      message: {
+        required: true
+      },
+      terms: {
+        required: true
+      },
+    },
+    messages: {
+      name: {
+        required: "Please enter a Name"
+      },
+      email: {
+        required: "Please enter a email address",
+        email: "Please enter a vaild email address"
+      },
+      message: {
+        required: "Please enter a Message"
+      },
+      terms: "Please accept our terms"
+    },
+    errorElement: 'span',
+    errorPlacement: function (error, element) {
+      error.addClass('invalid-feedback');
+      element.closest('.input-group').append(error);
+    },
+    highlight: function (element, errorClass, validClass) {
+      $(element).addClass('is-invalid');
+    },
+    unhighlight: function (element, errorClass, validClass) {
+      $(element).removeClass('is-invalid');
+    }
+  });
+});
