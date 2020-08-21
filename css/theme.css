@@ -31,12 +31,22 @@
 /* jumbotron */
 
 .jumbotron {
-  background-image: url('../img/jumbotron-bg.png');
+  background-image: url('../img/jumbotron-bg.jpg');
   background-size: cover;
   height: 550px;
   text-align: center;
   position: relative;
   /* margin-top: -75px; */
+}
+
+.jumbotron-pricing {
+  background-image: url('../img/pricing-bg.jpg');
+  background-size: cover;
+  height: 350px;
+  text-align: center;
+  position: relative;
+  /* margin-top: -75px; */
+
 }
 
 .jumbotron .container {
@@ -50,7 +60,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   position: absolute;
   bottom: 0;
 }
@@ -118,6 +128,26 @@
 }
 /* END INFO PANEL */
 
+/* PRICE PANEL */
+
+.price-panel {
+  border-radius: 12px;
+  margin-top: -200px;
+  padding: 30px;
+}
+
+.card-price {
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  border-color: #ACACAC;
+  padding: 10px;
+}
+
+/* END PRICE PANEL */
 /* CONTENT SPACE */
 
 .work-content {
@@ -493,6 +523,11 @@
   border-radius: 32px;
 }
 
+.btn-price {
+  margin-bottom: -80px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
 a.scrolltotop {
      /* background: #D50000 none repeat scroll 0 0; */
      bottom: 20px;
@@ -537,8 +572,17 @@ a.scrolltotop {
     height: 600px;
   }
 
+  .jumbotron-pricing {
+    margin-top: -75px;
+
+  }
+
   .jumbotron .display-4 {
     font-size: 62px;
+  }
+
+  .price-panel {
+    margin-top: -400px;
   }
 
   .work-content {

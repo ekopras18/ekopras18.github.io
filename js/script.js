@@ -50,49 +50,21 @@ $('.jumbotron .text-paralax').each(function(i) {
           }, 800);
     });
 
+// VALIDASI FORM WITH ALERTIFY
+    $(document).ready(function() {
+        $('#contact-form').submit(function(e) {
+          var name    = document.getElementById('name')
+          var email   = document.getElementById('email')
+          var message = document.getElementById('message')
 
-// VALIDASI FORM
-
-$(document).ready(function () {
-  $('#validasiform').validate({
-    rules: {
-      name: {
-        required: true,
-      },
-      email: {
-        required: true,
-        email: true,
-      },
-      message: {
-        required: true
-      },
-      terms: {
-        required: true
-      },
-    },
-    messages: {
-      name: {
-        required: "Please enter a Name"
-      },
-      email: {
-        required: "Please enter a email address",
-        email: "Please enter a vaild email address"
-      },
-      message: {
-        required: "Please enter a Message"
-      },
-      terms: "Please accept our terms"
-    },
-    errorElement: 'span',
-    errorPlacement: function (error, element) {
-      error.addClass('invalid-feedback');
-      element.closest('.input-group').append(error);
-    },
-    highlight: function (element, errorClass, validClass) {
-      $(element).addClass('is-invalid');
-    },
-    unhighlight: function (element, errorClass, validClass) {
-      $(element).removeClass('is-invalid');
-    }
-  });
-});
+          if (!name.value || !email.value || !message.value) {
+            alertify.error("Please check your entries");
+            return false;
+          } else {
+            //
+            // e.preventDefault();
+            // $(this).get(0).reset();
+            alertify.success("Success Submit!");
+          }
+        });
+      });
