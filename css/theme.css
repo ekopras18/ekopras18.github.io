@@ -406,10 +406,6 @@
   color: #3D3D3D;
 }
 
-.contacs .form-check, label.terms {
-  text-transform: none;
-
-}
 .contacs input {
   font-weight: 200;
   font-style: italic;
@@ -521,6 +517,16 @@
 .button-all {
   text-transform: uppercase;
   border-radius: 32px;
+}
+
+.btn-contact {
+  border-color: #146DE0;
+  text-transform: uppercase;
+  border-radius: 32px;
+}
+.btn-contact:hover {
+  border-color: #146DE0;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
 }
 
 .btn-price {
