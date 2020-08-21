@@ -56,9 +56,8 @@ $('.jumbotron .text-paralax').each(function(i) {
           var name    = document.getElementById('name')
           var email   = document.getElementById('email')
           var message = document.getElementById('message')
-          var terms   = document.getElementById('terms')
 
-          if (!name.value || !email.value || !message.value || !terms) {
+          if (!name.value || !email.value || !message.value) {
             alertify.error("Please check your entries");
             return false;
           } else {
