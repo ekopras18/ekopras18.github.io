@@ -19,7 +19,6 @@ $(window).scroll(function(){
           setTimeout(function() {
             $('.work-content .thumbnail').eq(i).addClass('muncul');
             $('.work-content .kanan').eq(i).addClass('kanan-go');
-
           }, 180 * (i+1))
 
         });
