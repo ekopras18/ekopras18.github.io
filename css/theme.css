@@ -166,6 +166,7 @@
 }
 .card dd {
   color: #ACACAC;
+  font-size: 14px;
 }
 .card h3 small {
   color: #ACACAC;
@@ -187,7 +188,7 @@
 }
 
 .btn-free {
-  margin-bottom: -40%;
+  margin-bottom: -115px;
   font-weight: bold;
   background-color: white;
   border-radius: 20px;
@@ -233,7 +234,7 @@
 }
 
 .btn-ultimate {
-  margin-bottom: -40%;
+  margin-bottom: -115px;
   font-weight: bold;
   background-color: white;
   border-radius: 20px;
@@ -278,7 +279,7 @@
 }
 
 .btn-premium {
-  margin-bottom: -40%;
+  margin-bottom: -115px;
   font-weight: bold;
   background-color: white;
   border-radius: 20px;
