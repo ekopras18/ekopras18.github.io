@@ -144,13 +144,15 @@
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
   border-radius: 35px;
   /* border-color: orange; */
-  border-width: 5px;
+  border-width: 2px;
   margin-bottom: 50px;
+  z-index: 1;
 }
 
 .img-price {
-  padding: none;
-  border-radius: 30px;
+  /* padding: none; */
+  /* margin: auto; */
+  border-radius: 33px;
 }
 
 .card h3 {
