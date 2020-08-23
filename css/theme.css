@@ -738,6 +738,10 @@ a.scrolltotop {
     margin-bottom: -8px;
   }
 
+  .active {
+    font-weight: bold;
+  }
+
   .jumbotron {
     margin-top: -75px;
     height: 600px;
