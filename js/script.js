@@ -60,7 +60,7 @@ $('.jumbotron .text-paralax').each(function(i) {
             alertify.error("Please check your entries");
             return false;
           } else {
-            //
+            //code here
             // e.preventDefault();
             // $(this).get(0).reset();
             alertify.success("Success Submit!");
