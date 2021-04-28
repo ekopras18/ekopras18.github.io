@@ -67,6 +67,22 @@ body {
 }
 
 /* Main Header Styles */
+/* navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand{
+	h2 {
+		// padding-bottom: 0.3em;
+		font-family: @h3-font;
+		// font-weight: 400;
+		font-size: 1.875em;
+		text-transform: none;
+	}
+}
+
 .main-header {
 	position: absolute;
 	top: 0;
@@ -107,6 +123,34 @@ body {
 				&:nth-child(6) a:hover, &:last-child a:hover {border: none;}
 			}
 		}
+		.navbar-brand, .nav-link, .nav-icon {
+	    color: white !important;
+	    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	  }
+
+	  .nav-link {
+			font-size: 11px;
+	    text-transform: uppercase;
+	    margin-right: 30px;
+	  }
+	  .nav-link:hover::after {
+	    content: '';
+	    display: block;
+	    border-bottom: 3px solid #cdd0d4;
+	    width: 50%;
+	    margin: auto;
+	    padding-bottom: 5px;
+	    margin-bottom: -8px;
+	  }
+
+		.nav-icon {
+	    text-transform: uppercase;
+	    margin-right: 30px;
+	  }
+
+	  .active {
+	    font-weight: bold;
+	  }
 	}
 }
 
@@ -168,6 +212,7 @@ body {
 							text-align: center;
 							font-family: @main-font;
 							font-size: 0.875em;
+							text-decoration: none;
 							color: @main-color;
 							text-transform: uppercase;
 							border: 0.1875em solid @main-color;
@@ -277,21 +322,21 @@ body {
 @media only screen and (min-width: 1920px) {
 	body {font-size: 22px;}
 	.main-header .header-wrapper {width: 57%;}
-	#section-1 {height: 46em;}
+	#section-1 {height: 36em;}
 	#section-1 .content-slider .slider .banner .banner-inner-wrapper {padding-top: 12em;}
 }
 
 @media only screen and (max-width: 1919px) {
 	body {font-size: 20px;}
 	.main-header .header-wrapper {width: 60%;}
-	#section-1 {height: 43em;}
+	#section-1 {height: 33em;}
 	#section-1 .content-slider .slider .banner .banner-inner-wrapper {padding-top: 11em;}
 }
 
 @media only screen and (max-width: 1680px) {
 	body {font-size: 18px;}
 	.main-header .header-wrapper {width: 65%;}
-	#section-1 {height: 40em;}
+	#section-1 {height: 30em;}
 	#section-1 .content-slider .slider .banner .banner-inner-wrapper {padding-top: 9em;}
 }
 
@@ -301,8 +346,37 @@ body {
 }
 
 @media only screen and (max-width: 1120px) {
+	.navbar-brand, .nav-link, .nav-icon {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	}
+
+	.nav-link {
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #cdd0d4;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.nav-icon {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.active {
+		font-weight: bold;
+	}
+
 	.main-header .header-wrapper .main-menu li {padding: 0.75em 1.4em;}
-	#section-1 {height: 35em;}
+	#section-1 {height: 25em;}
 	#section-1 .content-slider nav {bottom: -0.2em;}
 	#section-1 .content-slider .slider .banner .banner-inner-wrapper {padding-top: 7em;}
 	#section-1 .content-slider .slider .banner .banner-inner-wrapper .line {margin: 2em auto;}
@@ -310,13 +384,73 @@ body {
 
 @media only screen and (max-width: 1024px) {
 	body {font-size: 14px;}
+
+	.navbar-brand, .nav-link, .nav-icon {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	}
+
+	.nav-link {
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #cdd0d4;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.nav-icon {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.active {
+		font-weight: bold;
+	}
+
 	.main-header .header-wrapper .main-menu li {padding: 0.75em 1.3em;}
 	#section-1 .content-slider nav {bottom: 0;}
 	#section-1 .content-slider nav .controls {width: 80%;}
 }
 
 @media only screen and (max-width: 860px) {
+	.navbar-brand, .nav-link, .nav-icon {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	}
+
+	.nav-link {
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #cdd0d4;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.nav-icon {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.active {
+		font-weight: bold;
+	}
+
 	.main-header .header-wrapper .main-menu li {padding: 0.75em 0.9em;}
+
 	#section-1 {height: 29em;}
 	#section-1 .content-slider nav {bottom: -1em;}
 	#section-1 .content-slider nav .controls {width: 90%;}
@@ -326,6 +460,35 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+	.navbar-brand, .nav-link, .nav-icon {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	}
+
+	.nav-link {
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #cdd0d4;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.nav-icon {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.active {
+		font-weight: bold;
+	}
+
 	.main-header .header-wrapper .main-menu li {padding: 0.75em 0.5em;}
 	#section-1 {height: 27em;}
 	#section-1 .content-slider nav .controls {width: 100%;}
@@ -336,6 +499,35 @@ body {
 @media only screen and (max-width: 650px) {.main-header .header-wrapper {width: 95%;}}
 
 @media only screen and (max-width: 480px) {
+	.navbar-brand, .nav-link, .nav-icon {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	}
+
+	.nav-link {
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #cdd0d4;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+
+	.nav-icon {
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.active {
+		font-weight: bold;
+	}
+
 	.main-header .header-wrapper {width: 97%;}
 	.main-header .header-wrapper .main-logo {display: none;}
 	.main-header .header-wrapper .main-menu li {padding: 0.2em 0.3em;}
