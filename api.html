@@ -117,6 +117,86 @@
     $('#pilihkota').select2({
       tags: true
     });
+
+    $(document).ready(function(){
+
+    // var settings = {
+		//   "url": "https://api.myquran.com/v1/sholat/kota/cari/kediri",
+		//   "method": "GET",
+		//   "timeout": 0,
+		// };
+		//
+		// console.log('sett : ',settings);
+		//
+		// $.ajax(settings).done(function (response) {
+		//   console.log('res :',response);
+		// });
+
+    sessionStorage.setItem('key','a$pVPXKasdhvWjHV3y5FAyOv6c.5WXbZw2ThqlZhjjp8dHtMEV8s2h/0AW');
+		sessionStorage.setItem('userToken',JSON.stringify('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfbmFtZSI6IkFQSV9QUF9GSW5hbmNpYWxfRGFzYm9hcmQgUUEiLCJuYW1lX2lkIjo5OSwibmFtZSI6IkFQSSBQUENPTE9NQURVIiwicm9sZSI6Ik9wZW4gQVBJIiwic3ViX3BhcmVudF9jb21wYW55X2lkIjozMCwiY29tcGFueV9pZCI6WzMwXSwiZXhwIjoxNjM4OTQ5MjQ5LCJpc3MiOiJkZXYgR2FtYXRlY2hubyIsInN1YiI6InBwc2NAcHRwcC5jby5pZCJ9.IcUjMwQ3U_VfFeaFsjra-VhYKOGLXNnmaJRtOhtR3-Q'));
+		// let email = "ppsc@ptpp.co.id";
+		// let pass = "Z{Xu)@4pF4&j%]r?G/NtiC#F<uk'X^";
+		let datas = {
+			email:"ppsc@ptpp.co.id",
+			pass:"Z{Xu)@4pF4&j%]r?G/NtiC#F<uk'X^"
+		}
+
+    // let sendReq = (ev) =>{
+    //   let url = 'https://mantapp-api-qa.ptpp.co.id/api/auth';
+    //   let token = JSON.parse(sessionStorage.getItem('userToken'));
+    //   let h = new headers();
+    //       h.append('Authentication', `Bearer ${token}`);
+    //   let req = new Request(url, {
+    //     method: 'POST',
+    //     mode: 'cors',
+    //     headers: h
+    //   });
+    //
+    //   fetch(req)
+    //       .then(resp => resp.json())
+    //       .then(data => {
+    //         console.log('data : ',data);
+    //       })
+    //       .catch(err => {
+    //         console.error(err.message);
+    //       })
+    // }
+		//
+      let token = JSON.parse(sessionStorage.getItem('userToken'));
+
+		$.ajax({
+        type: "POST",
+        url: 'https://mantapp-api-qa.ptpp.co.id/api/auth',
+				headers: {
+					'Authentication':'Bearer '+token,
+					// 'email':email,
+	        // 'password':pass,
+					// 'Content-Type':'application/json',
+					'Access-Control-Allow-Origin':'*',
+	        'Access-Control-Allow-Headers':'Origin, X-Requested-With, Content-Type, Accept',
+    		},
+				// headers: {
+				// 			"api-key": key,
+        //       "accept": "application/json",
+        //       "Access-Control-Allow-Origin":"*",
+				// 			"Access-Control-Allow-Headers":"Origin, X-Requested-With, Content-Type, Accept",
+        //   },
+				// beforeSend: function(request) {
+			  //   request.setRequestHeader("Authentication",'Bearer '+token);
+			  // },
+				contentType: "application/json",
+				data: {email:"ppsc@ptpp.co.id",password:"Z{Xu)@4pF4&j%]r?G/NtiC#F<uk'X^"}, //{action:'x',params:['a','b','c']}
+        // dataType: 'json',
+        // async: true,
+        success:function(ses){
+					console.log('res : ',ses);
+				}
+		});
+
+
+  });
+
+
     </script>
   </body>
 </html>
